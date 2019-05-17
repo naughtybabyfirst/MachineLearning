@@ -48,7 +48,6 @@ keep_prob = tf.placeholder(tf.float32)
 x_image = tf.reshape(xs, [-1, 28, 28, 1])
 
 #  卷积层 1
-## conv1 layer ##
 
 W_conv1 = weight_variable([7, 7, 1, 32])  # patch 7x7, in size 1, out size 32
 b_conv1 = bias_variable([32])
